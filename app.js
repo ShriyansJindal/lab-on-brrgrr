@@ -35,8 +35,12 @@ function renderAll() {
   renderPrice();
 }
 
+const patty = document.querySelector("#patty");
+const cheese = document.querySelector("#cheese");  
+const tomatoes = document.querySelector("#tomato"); 
+const onions = document.querySelector("#onion"); 
+const lettuce = document.querySelector("#lettuce");
 function renderPatty() {
-  const patty = document.querySelector("#patty");
   //you can also use getElementById
   if (state.Patty) {
     patty.style.display = "block";
@@ -47,7 +51,6 @@ function renderPatty() {
 
 function renderCheese() {
   //Trial 1 - Change the visibility of cheese based on state by manipulating the DOM
-  const cheese = document.querySelector("#cheese");  
   if (state.Cheese) {
     cheese.style.display = "block";
   } else {
@@ -57,7 +60,6 @@ function renderCheese() {
 
 function renderTomatoes() {
   //Trial 1 - Change the visibility of Tomatoes based on state by manipulating the DOM
-  const tomatoes = document.querySelector("#tomato"); 
   if (state.Tomatoes) {
     tomatoes.style.display = "block";
   } else {
@@ -67,7 +69,6 @@ function renderTomatoes() {
 
 function renderOnions() {
   //Trial 1 - Change the visibility of Onions based on state by manipulating the DOM
-  const onions = document.querySelector("#onion"); 
   if (state.Onions) {
     onions.style.display = "block";
   } else {
@@ -77,7 +78,6 @@ function renderOnions() {
 
 function renderLettuce() {
   //Trial 1 - Change the visibility of Lettuce based on state by manipulating the DOM
-  const lettuce = document.querySelector("#lettuce");
   if (state.Lettuce) {
     lettuce.style.display = "block";
   } else {
